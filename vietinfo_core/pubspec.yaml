@@ -3,7 +3,6 @@ description: dev vietinfo test.
 version: 0.0.5
 #author:  Vietinfo dev test
 homepage: https://github.com/tranhieu12a7/vietinfo/tree/main/vietinfo_core
-documentation: https://github.com/tranhieu12a7/vietinfo/tree/main/vietinfo_core
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
