@@ -4,11 +4,47 @@ A new Flutter package project.
 
 ## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+*nếu dùng  "get_it: ^4.0.4"
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+* cách dùng pub
+* thì cần init
+final getIt = GetIt.instance;
+class ServiceLocator{
+    Future init()async{
+      getIt.registerSingleton<NetworkDataSource>(NetworkResponse());
+    }
+}
+* call pub
+class callApiYour{
+     NetworkDataSource network;
+     callApiYour(){
+         this.network = getIt.get<NetworkDataSource>();
+        // * nếu không dùng GetIt
+        // this.network = NetworkResponse();
+
+     }
+     void post(String url,Map<String, String>  param){
+          NetWorkResult dataNetWorkResult = await network.post(Uri.parse(url), body: param);
+          if (dataNetWorkResult.status == ENetWorkStatus.Error) {
+                  return null;
+                }
+          //  var data = dataNetWorkResult.dataResult as List;
+          // print(data);
+          //  List<YourModel> listData = [];
+          //  for (var item in data) {
+          //    listData.add(YourModel.fromJson(item));
+          //  }
+          //  return listData;
+     }
+     
+}
+
+
+
+
+
+
+
+
+
+
