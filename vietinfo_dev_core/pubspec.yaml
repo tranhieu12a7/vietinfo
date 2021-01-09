@@ -1,7 +1,7 @@
 name: vietinfo_dev_core
 description: A new Flutter package project.
-version: 0.0.1
-author: Vietinfo dev test
+version: 0.0.2
+#author: Dev test
 homepage: https://github.com/tranhieu12a7/vietinfo/tree/main/vietinfo_dev_core
 
 environment:
