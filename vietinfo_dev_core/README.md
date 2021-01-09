@@ -1,6 +1,6 @@
-# flutter_package
+# vietinfo_dev_core
 
-A new Flutter package.
+A new Flutter package project.
 
 ## Getting Started
 

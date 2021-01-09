@@ -1,9 +1,8 @@
-name: vietinfo_core
-description: A new Flutter package vietinfo Nguyen Mai Truong Loc (0788877***) .
-version: 0.0.4
-#author: tranhieu12a8@gmail.com
-homepage: https://example-pet-store.com/newtify
-documentation: https://example-pet-store.com/newtify/docs
+name: vietinfo_dev_core
+description: A new Flutter package project.
+version: 0.0.1
+author:
+homepage:
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -12,10 +11,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-  http: ^0.12.2
-  shared_preferences: ^0.5.8
-
 
 dev_dependencies:
   flutter_test:
