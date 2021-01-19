@@ -1,6 +1,6 @@
 name: vietinfo_dev_core
 description: A new Flutter package project.
-version: 0.0.3
+version: 0.0.4
 #author: Dev test
 homepage: https://github.com/tranhieu12a7/vietinfo/tree/main/vietinfo_dev_core
 
@@ -13,6 +13,7 @@ dependencies:
     sdk: flutter
 
   http: ^0.12.2
+  carousel_slider: ^2.3.1
 
 dev_dependencies:
   flutter_test:

@@ -2,8 +2,8 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 import 'package:http/http.dart' as http;
+import 'package:vietinfo_dev_core/vietinfo_dev_core.dart';
 
-import 'network_datasource.dart';
 
 class NetworkResponse extends NetworkDataSource {
   var isInternetCheck;
