@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vietinfo_dev_core/vietinfo_dev_core.dart';
 
 class WidgetScreen extends StatelessWidget {
   final Widget child;
@@ -24,7 +25,7 @@ class WidgetScreen extends StatelessWidget {
                 width:MediaQuery.of(context).size.width,
                 padding: EdgeInsets.only(top:MediaQuery.of(context).padding.top),
                 child: appBar):SizedBox(),
-            Expanded(child: child),
+            Expanded(child: child??SizedBox()),
           ],
         ),
       ),
