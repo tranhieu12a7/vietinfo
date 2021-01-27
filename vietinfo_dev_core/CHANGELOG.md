@@ -9,7 +9,11 @@
 * TODO: Describe initial release.
 * change readme.md
 
-## [0.0.4] - TODO: Add release date 2021/01/19.
+## [0.0.4] - 2021/01/19.
 * TODO: Describe initial release.
 * add widget_screen.md
 * add carousel_slider: ^2.3.1
+
+## [0.0.5] - TODO: Add release date 2021/01/19.
+* remove carousel_slider: ^2.3.1
+* vietinfo_dev_core.dart update code.
