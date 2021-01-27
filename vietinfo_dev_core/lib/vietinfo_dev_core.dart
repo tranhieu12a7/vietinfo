@@ -15,7 +15,7 @@ export 'package:vietinfo_dev_core/core/shared_prefs.dart';
 CoreSizeDataSource core;
 
 class VietInfoDev{
-  static init(BuildContext context){
+  static init( ){
     core=new CoreSizeResponse();
     SharedPrefs.initializer();
   }
