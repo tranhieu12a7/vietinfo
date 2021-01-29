@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:module_chat/chats/personal/chat_personal.dart';
 import 'package:module_chat/config/config_style.dart';
 import 'package:module_chat/history/bloc/chat_history_bloc.dart';
 import 'package:module_chat/history/bloc/chat_history_state.dart';
 import 'package:module_chat/models/model_chat_history.dart';
-
 
 // ignore: must_be_immutable
 class WidgetListHistory extends StatefulWidget {
@@ -118,10 +118,13 @@ class _WidgetListHistoryState extends State<WidgetListHistory> {
   Widget itemHistory(ModelChatHistory data) {
     return GestureDetector(
       onTap: () {
-        //add model history
-        // Map<String, dynamic> param = new Map<String, dynamic>();
-        // param[ChatPersonal.modelDataHistory] = data;
-        // //call navigation page chat personal
+        // add model history
+        Map<String, dynamic> param = new Map<String, dynamic>();
+        param[ChatPersonal.modelDataHistory] = data;
+
+        //call navigation page chat personal
+        BlocProvider.of<ChatHistoryBloc>(widget.buildContext)
+            .callNavigatorChatPersonal(context: context, param: param);
         // ConfigSetting.getNavigator().pushNavigation(NamePage.chat_personal,
         //     params: {"paramData": param});
       },
@@ -154,10 +157,12 @@ class _WidgetListHistoryState extends State<WidgetListHistory> {
                   SizedBox(
                     height: 5.0,
                   ),
-                  Text('${data.message}',style: TextStyle(
-                    fontFamily: StyleFontFamily.SarabunRegular,
-                    color: Color(0xff838c9b)
-                  ),),
+                  Text(
+                    '${data.message}',
+                    style: TextStyle(
+                        fontFamily: StyleFontFamily.SarabunRegular,
+                        color: Color(0xff838c9b)),
+                  ),
                 ],
               ),
             )

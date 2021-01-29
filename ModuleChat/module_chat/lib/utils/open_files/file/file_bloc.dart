@@ -37,10 +37,8 @@ class FileBloc extends Bloc<FileEvent, FileState> {
       String nameFile = link.split("/").last;
       final filePath = dirPath.path + "/" + nameFile;
       File file = new File(filePath);
-      appLogs("callCheckFileInit-   ${file.path}");
       if (file.existsSync()) {
         if ((await file.readAsBytes()).length > 0) {
-          appLogs("callCheckFileInit- true-   ${file.path}");
           data.isShowFileDownload=true;
           return FileStateStart().clone(data: data,isHasFile: true);
         }
@@ -48,6 +46,7 @@ class FileBloc extends Bloc<FileEvent, FileState> {
       data.isShowFileDownload=false;
       return FileStateStart().clone(data: data,isHasFile: false);
     } catch (error) {
+      appLogs("callCheckFileInit- ${error}");
       return FileStateFailure();
     }
   }

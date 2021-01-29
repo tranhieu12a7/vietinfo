@@ -11,28 +11,28 @@ class ConfigStyle {
 }
 
 class StyleColor {
-  static Color colorPrime = ConfigStyle.configStyle.colorPrime ?? Colors.blue;
+  static Color colorPrime = ConfigStyle.configStyle?.colorPrime ?? Colors.blue;
   static Color theirItemChat =
-      ConfigStyle.configStyle.theirItemChat ?? Color(0xfff3f5f6);
+      ConfigStyle.configStyle?.theirItemChat ?? Color(0xfff3f5f6);
   static Color theirItemChatBodyMessage =
-      ConfigStyle.configStyle.theirItemChatBodyMessage ?? Color(0xff051a39);
+      ConfigStyle.configStyle?.theirItemChatBodyMessage ?? Color(0xff051a39);
   static Color theirItemChatDateTimeBottom =
-      ConfigStyle.configStyle.theirItemChatDateTimeBottom ?? Color(0xffa2abb9);
+      ConfigStyle.configStyle?.theirItemChatDateTimeBottom ?? Color(0xffa2abb9);
   static Color myItemChat =
-      ConfigStyle.configStyle.myItemChat ?? Color(0xff2f75b5);
+      ConfigStyle.configStyle?.myItemChat ?? Color(0xff2f75b5);
   static Color myItemChatBodyMessage =
-      ConfigStyle.configStyle.myItemChatBodyMessage ?? Color(0xffffffff);
+      ConfigStyle.configStyle?.myItemChatBodyMessage ?? Color(0xffffffff);
   static Color myItemChatDateTime =
-      ConfigStyle.configStyle.myItemChatDateTime ?? Color(0xffa2abb9);
+      ConfigStyle.configStyle?.myItemChatDateTime ?? Color(0xffa2abb9);
   static Color inputChatBackgroundColor =
-      ConfigStyle.configStyle.inputChatBackgroundColor ?? Color(0xfff3f5f6);
+      ConfigStyle.configStyle?.inputChatBackgroundColor ?? Color(0xfff3f5f6);
   static Color itemChatDateTimeColor =
-      ConfigStyle.configStyle.itemChatDateTimeColor ?? Color(0xffa2abb9);
+      ConfigStyle.configStyle?.itemChatDateTimeColor ?? Color(0xffa2abb9);
   static Color navigationBarColorStart =
-      ConfigStyle.configStyle.navigationBarColorStart ??
+      ConfigStyle.configStyle?.navigationBarColorStart ??
           ColorExtends.fromHex('#4184d3');
   static Color navigationBarColorEnd =
-      ConfigStyle.configStyle.navigationBarColorEnd ??
+      ConfigStyle.configStyle?.navigationBarColorEnd ??
           ColorExtends.fromHex('#4fc4dd');
 }
 

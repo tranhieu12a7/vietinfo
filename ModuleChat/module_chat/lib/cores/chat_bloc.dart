@@ -363,8 +363,8 @@ class ChatBloc extends Cubit<ChatState> {
     //insert to fist default of messages list because that list reverse
 
     //get value list messages have first item save local
-    appLogs('modelMessagesCurrent ${modelMessagesCurrent.length}');
-    appLogs('modelMessagesCurrent ${modelMessagesCurrent.first.message}');
+    // appLogs('modelMessagesCurrent ${modelMessagesCurrent.length}');
+    // appLogs('modelMessagesCurrent ${modelMessagesCurrent.first.message}');
 
     yield modelMessagesCurrent;
 

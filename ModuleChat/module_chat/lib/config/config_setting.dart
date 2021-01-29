@@ -3,6 +3,7 @@ import 'package:module_chat/service/apis/api_datasource.dart';
 import 'package:module_chat/service/apis/api_response.dart';
 import 'package:module_chat/service/files/file_datasource.dart';
 import 'package:module_chat/service/files/file_response.dart';
+import 'package:module_chat/utils/events/event_notify.dart';
 import 'package:module_chat/utils/pagt_file_locals/path_file_local_datasource.dart';
 import 'package:module_chat/utils/pagt_file_locals/path_file_local_response.dart';
 import 'package:module_chat/utils/take_files/core_file_datasource.dart';
@@ -21,8 +22,8 @@ class ConfigSetting {
   Future init() async {
     // getIt.registerSingleton<NavigatorDataSource>(NavigatorResponse(),
     //     signalsReady: true);
-    // getIt.registerSingleton<NotifyEvent>(NotifyEventResponse(),
-    //     signalsReady: true);
+    getIt.registerSingleton<NotifyEvent>(NotifyEventResponse(),
+        signalsReady: true);
     getIt.registerSingleton<ApiDataSource>(ApiResponse(), signalsReady: true);
     getIt.registerSingleton<NetworkDataSource>(NetworkResponse(),
         signalsReady: true);

@@ -149,7 +149,7 @@ class _ChatHistoryState extends State<ChatHistory> {
           child: Column(
             children: [
               TappedBarKindMessages(),
-              Expanded(child: WidgetListHistory())
+              Expanded(child: WidgetListHistory(buildContext: context,))
             ],
           ),
         ),

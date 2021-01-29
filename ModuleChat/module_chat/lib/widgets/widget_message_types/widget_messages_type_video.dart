@@ -79,7 +79,7 @@ class _WidgetMessageTypeVideoState extends State<WidgetMessageTypeVideo> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    appLogs("messageID ${widget.data.messageID}");
+    // appLogs("messageID ${widget.data.messageID}");
   }
 
   @override

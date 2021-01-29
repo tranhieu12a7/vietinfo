@@ -1,4 +1,5 @@
 library module_chat;
+
 import 'package:module_chat/config/config_style.dart';
 import 'package:module_chat/config/model_config.dart';
 
@@ -10,12 +11,20 @@ export 'package:module_chat/config/model_config.dart';
 export 'package:module_chat/history/history_main.dart';
 
 
-class ModuleChat{
-  void initConfig( ModelConfigStyle modelConfigStyle){
+String keyChatPersonal="ChatPersonalPage";
+
+
+
+
+class ModuleChat {
+
+  static void initSetting() {
     ConfigSetting().init();
+  }
+  static void initStyle(ModelConfigStyle modelConfigStyle) {
     ConfigStyle.init(modelConfigStyle: modelConfigStyle);
   }
-  void initData({ModelConfig modelConfig}){
+  static void initData({ModelConfig modelConfig}) {
     ConfigData.init(modelConfig);
   }
 }

@@ -16,7 +16,7 @@ class ApiResponse extends ApiDataSource {
   @override
   Future<List<ModelChatHistory>> listHistory({int pageNum = 1}) async {
     try {
-      final url = ConfigData.getUrl() + '/api/chat/get-history';
+      final url = ConfigData.getUrl() + ConfigData.urlHistoryChat;
 
       var param = new Map<String, String>();
       param['userID'] = ConfigData.getUserID();
@@ -51,7 +51,7 @@ class ApiResponse extends ApiDataSource {
         int pageNum,
         int pageSize = 20}) async {
     try {
-      final url = ConfigData.getUrl() + '/api/chat/getlist-message-by-userid';
+      final url = ConfigData.getUrl() + ConfigData.urlGetListMessageByUserID;
 
       var param = new Map<String, String>();
       param['userID'] = ConfigData.getUserID();
@@ -93,7 +93,7 @@ class ApiResponse extends ApiDataSource {
         ClassFirebase classFirebase}) async {
     // TODO: implement insertMessage
     try {
-      final url = ConfigData.getUrl() + '/api/chat/insert-messages';
+      final url = ConfigData.getUrl() + ConfigData.urlInsertMessages;
 
       var param = new Map<String, String>();
       param['userID'] = ConfigData.getUserID();

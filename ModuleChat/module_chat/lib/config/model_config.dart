@@ -1,7 +1,7 @@
 class ModelConfig {
-  String url;
-  String urlWeb;
-  String urlUpload;
+  // String url;
+  // String urlWeb;
+  // String urlUpload;
   String pathLocalDownload;
   String pathLocalImages;
   String pathLocalVideos;
@@ -19,22 +19,23 @@ class ModelConfig {
   String token;
 
   ModelConfig(
-      this.url,
-      this.urlWeb,
-      this.urlUpload,
-      this.pathLocalDownload,
-      this.pathLocalImages,
-      this.pathLocalVideos,
-      this.pathLocalFiles,
-      this.userName,
-      this.fullName,
-      this.userID,
-      this.donViID,
-      this.soDienThoai,
-      this.userPortalID,
-      this.userMasterID,
-      this.phongBanID,
-      this.maPhuongXa,
-      this.quanHuyenID,
-      this.token);
+  {
+    // this.url,
+    // this.urlWeb,
+    // this.urlUpload,
+    this.pathLocalDownload,
+    this.pathLocalImages,
+    this.pathLocalVideos,
+    this.pathLocalFiles,
+    this.userName,
+    this.fullName,
+    this.userID,
+    this.donViID,
+    this.soDienThoai,
+    this.userPortalID,
+    this.userMasterID,
+    this.phongBanID,
+    this.maPhuongXa,
+    this.quanHuyenID,
+    this.token});
 }

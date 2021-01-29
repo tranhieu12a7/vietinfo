@@ -4,9 +4,20 @@ import 'model_config.dart';
 
 class ConfigData {
   //
-  // static String _url = "http://192.168.1.132:4009";
-  // static String _urlWeb = "http://192.168.1.132:4009";
-  // static String _urlUpload = "http://192.168.1.132:4009/api/UploadFiles";
+  static String url = "http://192.168.1.132:4009";
+  static String urlWeb = "http://192.168.1.132:4009";
+  static String urlUpload = "http://192.168.1.132:4009/api/UploadFiles";
+
+  ///api chat
+  static String urlHistoryChat= "/api/chat/get-history";
+  static String urlGetListMessageByUserID= "/api/chat/getlist-message-by-userid";
+  static String urlInsertMessages= "/api/chat/insert-messages";
+  static String urlDownloadFileAlfresco= "/api/DownloadFileAlfresco/";
+
+
+  static double heightNavigationBar = 60.0;
+
+
   // static String _pathLocalDownload = "Chat/downloads";
   // static String _pathLocalImages = "Chat/images";
   // static String _pathLocalVideos = "Chat/videos";
@@ -43,11 +54,17 @@ class ConfigData {
   static String getPathLocalFiles() =>  _modelConfig.pathLocalFiles;
 
   ///api
-  static String getUrl() =>  _modelConfig.url;
+  // static String getUrl() =>  _modelConfig.url;
+  //
+  // static String getUrlWeb() =>  _modelConfig.urlWeb;
+  //
+  // static String getUrlUpload() =>  _modelConfig.urlUpload;
 
-  static String getUrlWeb() =>  _modelConfig.urlWeb;
+  static String getUrl() =>  url;
 
-  static String getUrlUpload() =>  _modelConfig.urlUpload;
+  static String getUrlWeb() =>  urlWeb;
+
+  static String getUrlUpload() =>  urlUpload;
 
   ///config data local
   static String getURLAvatar() => "";
@@ -81,3 +98,5 @@ class ConfigData {
 
   // static String logoLogin() => "images/login_image.png";
 }
+
+

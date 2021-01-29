@@ -19,7 +19,7 @@ class FileResponse extends FileDataSource {
     var temp = url.split('/');
     String fileName = temp[temp.length - 1];
     if (url.contains("Alfresco")) {
-      URL = ConfigData.getUrl() + '/api/DownloadFileAlfresco/';
+      URL = ConfigData.getUrl() + ConfigData.urlDownloadFileAlfresco;
       //URL = URL_DOWNLOAD_FILEAlfresco; print('URL file_response: $URL');
       param['fileUrl'] = url;
       param['fileName'] = fileName;

@@ -1,4 +1,4 @@
-appLogs(Object object, {String tag = 'APPLOGS'}) {
+appLogs(Object object, {String tag = 'APPLOGS - MODULE CHAT - '}) {
   String message = "$object";
   int maxLogSize = 1000;
   for (int i = 0; i <= message.length / maxLogSize; i++) {
